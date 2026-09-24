@@ -328,11 +328,24 @@ const SLIDES = [
         
         <motion.h2 variants={fadeUp} className="text-3xl text-white font-bold mt-16 tracking-wide drop-shadow-[0_0_10px_rgba(255,255,255,0.2)]">Academy of Excellence</motion.h2>
         
-        <motion.div variants={fadeUp} className="mt-10 flex flex-col items-center border border-slate-700/50 bg-[#0f172a]/80 backdrop-blur-md px-12 py-5 rounded-3xl shadow-2xl relative overflow-hidden group">
-           <motion.div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-           <span className="text-slate-500 uppercase tracking-widest text-xs font-bold mb-2">Developed & Submitted By</span>
-           <span className="text-2xl text-blue-400 font-bold mb-1 drop-shadow-[0_0_5px_#3b82f6]">Arjun Kotwal</span>
-           <span className="text-sm text-slate-400 font-mono tracking-widest bg-[#020617] px-4 py-1 rounded-full border border-slate-800 mt-2 group-hover:border-blue-500/30 transition-colors">B.Com IT</span>
+        <motion.div variants={fadeUp} className="mt-10 flex w-full max-w-4xl justify-between items-center relative z-20">
+           
+           {/* Left side: Submitted By */}
+           <div className="flex flex-col items-start bg-[#0f172a]/80 backdrop-blur-md border border-slate-700/50 px-8 py-5 rounded-3xl shadow-2xl group relative overflow-hidden min-w-[300px]">
+             <motion.div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+             <span className="text-slate-500 uppercase tracking-widest text-xs font-bold mb-2 relative z-10">Submitted By</span>
+             <span className="text-2xl text-blue-400 font-bold mb-1 drop-shadow-[0_0_5px_#3b82f6] relative z-10">Kamlesh Singh</span>
+             <span className="text-sm text-slate-400 font-mono tracking-widest bg-[#020617] px-4 py-1 rounded-full border border-slate-800 mt-2 group-hover:border-blue-500/30 transition-colors relative z-10">Roll No: 2446586</span>
+           </div>
+
+           {/* Right side: Submitted To */}
+           <div className="flex flex-col items-end bg-[#0f172a]/80 backdrop-blur-md border border-slate-700/50 px-8 py-5 rounded-3xl shadow-2xl group relative overflow-hidden min-w-[300px] text-right">
+             <motion.div className="absolute inset-0 bg-gradient-to-l from-purple-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+             <span className="text-slate-500 uppercase tracking-widest text-xs font-bold mb-2 relative z-10">Submitted To</span>
+             <span className="text-2xl text-purple-400 font-bold mb-1 drop-shadow-[0_0_5px_#8b5cf6] relative z-10">Ms. Pratiksha Bagga</span>
+             <span className="text-sm text-slate-400 font-mono tracking-widest bg-[#020617] px-4 py-1 rounded-full border border-slate-800 mt-2 group-hover:border-purple-500/30 transition-colors relative z-10">Project Guide</span>
+           </div>
+
         </motion.div>
       </motion.div>
     )
