@@ -325,7 +325,15 @@ const SLIDES = [
           <motion.div className="absolute -inset-10 border border-blue-500/30 rounded-full" animate={{ rotate: 360, scale: [1, 1.05, 1] }} transition={{ duration: 10, repeat: Infinity, ease: "linear" }} />
           <h1 className="text-7xl md:text-9xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500 drop-shadow-[0_0_15px_rgba(59,130,246,0.5)] leading-tight">PHP<br/><span className="text-4xl md:text-6xl font-light text-slate-300">x</span><br/>REACT</h1>
         </motion.div>
-        <motion.h2 variants={fadeUp} className="text-2xl text-slate-400 font-mono mt-12 tracking-widest uppercase">Academy of Excellence</motion.h2>
+        
+        <motion.h2 variants={fadeUp} className="text-3xl text-white font-bold mt-16 tracking-wide drop-shadow-[0_0_10px_rgba(255,255,255,0.2)]">Academy of Excellence</motion.h2>
+        
+        <motion.div variants={fadeUp} className="mt-10 flex flex-col items-center border border-slate-700/50 bg-[#0f172a]/80 backdrop-blur-md px-12 py-5 rounded-3xl shadow-2xl relative overflow-hidden group">
+           <motion.div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+           <span className="text-slate-500 uppercase tracking-widest text-xs font-bold mb-2">Developed & Submitted By</span>
+           <span className="text-2xl text-blue-400 font-bold mb-1 drop-shadow-[0_0_5px_#3b82f6]">Arjun Kotwal</span>
+           <span className="text-sm text-slate-400 font-mono tracking-widest bg-[#020617] px-4 py-1 rounded-full border border-slate-800 mt-2 group-hover:border-blue-500/30 transition-colors">B.Com IT</span>
+        </motion.div>
       </motion.div>
     )
   },
